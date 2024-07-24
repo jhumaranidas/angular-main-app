@@ -1,0 +1,10 @@
+<app-header></app-header>
+<mat-drawer-container>
+  <mat-drawer mode="side" opened class="sidebar">
+    <div>
+      <a [href]="['/home']"> Button Material</a>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content><router-outlet></router-outlet></mat-drawer-content>
+</mat-drawer-container>
+<app-footer></app-footer>

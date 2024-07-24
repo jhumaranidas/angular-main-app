@@ -1,0 +1,12 @@
+<p>directivetest works!</p>
+<h1>H1</h1>
+<h2>H2</h2>
+<h3>H3</h3>
+<h4 appHighlight defaultColor="blue">H4</h4>
+<h5 [appHighlight]="'red'">H5</h5>
+<h6 appHighlight>H6</h6>
+
+<div ngNonBindable [appHighlight]="'yellow'">This should not evaluate: {{ 1 +1 }}, but will highlight yellow.
+</div>
+
+<div>{{'ashib' | capital}}</div>

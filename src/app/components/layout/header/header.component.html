@@ -1,0 +1,42 @@
+<mat-toolbar color="primary">
+  <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button> -->
+  <div style="width:100px;"><h1>LOGO</h1></div>
+  <span>Welome,&nbsp;</span>
+  <span>Shib
+    <mat-icon [matMenuTriggerFor]="menu" style="height: 17px;margin-left:-5px;">keyboard_arrow_down</mat-icon>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Profile</button>
+      <button mat-menu-item>Logout</button>
+      <button mat-menu-item>My List</button>
+    </mat-menu>
+  </span>
+  <span class="example-spacer"></span>
+  <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button> -->
+
+  <a aria-label="Profile" [routerLink]="['/home']"  aria-current="page" [href]="['/home']" class="headerlink">
+    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home" color="white"></mat-icon>Home
+  </a>
+ 
+  <a aria-label="Profile" [routerLink]="['/home']"  aria-current="page" href="#">
+    <mat-icon>perm_phone_msg</mat-icon> Contact
+  </a>
+
+  <a aria-label="Profile" [routerLink]="['/home']"  aria-current="page" href="#">
+    <mat-icon color="white">notification_important</mat-icon>
+  </a>
+
+ 
+  <!-- <div class="spacer"></div> -->
+  <!-- <div class="welcome-name"> 
+      <a href="#" style="color:aquamarine;"><i class="fa fa-user" aria-hidden="true" style="color:burlywood;"></i> Shib <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i></a>
+  </div> -->
+
+</mat-toolbar>
+
